@@ -1,0 +1,211 @@
+@import "../../styles/theme/mixin/responsive.scss";
+
+.BookCard {
+  display: grid;
+  grid-gap: 1.5rem;
+  border-radius: 2.6rem;
+  width: 100%;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  position: relative;
+  background: var(--white);
+  padding: 2rem 2.5rem;
+
+
+  @include lg() {
+    max-width: 37rem;
+    margin-right: 13.5rem;
+  }
+
+  &__decor {
+    display: none;
+    position: absolute;
+    top: -9rem;
+    right: -6rem;
+    z-index: -1;
+    @include lg() {
+      display: grid;
+      justify-self: end;
+    }
+  }
+
+  &__thumbnail,
+  &__title,
+  &__description,
+  &__actions, {
+    grid-column: span 2;
+  }
+
+  &__thumbnail {
+    width: 100%;
+    max-width: 32rem;
+    border-radius: 2.4rem;
+    grid-column: span 2;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-style: normal;
+
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  &__actions {
+    display: grid;
+    justify-content: start;
+    grid-auto-flow: column;
+    grid-gap: 0 1rem;
+  }
+
+  &__action {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: var(--gray-2);
+    border-radius: 100%;
+
+    &:hover {
+      background-color: transparent;
+
+      i::before {
+        color: var(--tertiary);
+      }
+    }
+
+    i::before {
+      color: var(--gray-3);
+    }
+
+    &--like {
+      background: none;
+      border: none;
+      justify-self: end;
+      font-size: 2rem;
+      padding: 0;
+
+      &:hover {
+        i::before {
+          color: var(--blue2);
+        }
+      }
+
+      i::before {
+        color: var(--blue2);
+      }
+    }
+  }
+
+  &__population {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--gray-3);
+
+    i {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &-stateBox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1rem;
+    position: absolute;
+    z-index: 2;
+    bottom: 5rem;
+    right: 0;
+    padding: 1.5rem;
+    background: var(--white);
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 1.8rem;
+    width: 100%;
+    max-width: 26.5rem;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+
+    @include lg() {
+      transform: translateX(50%);
+
+    }
+
+    &--show {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &--hidden {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    > div {
+      display: grid;
+      grid-gap: 0.5rem;
+    }
+
+
+    &__thumbnail {
+      border-radius: 100%;
+    }
+
+    &__state {
+      font-size: 1.4rem;
+      color: var(--gray-3);
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: -0.035em;
+    }
+
+    &__title {
+      font-size: 1.8rem;
+      color: var(--black-5);
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: -0.015em;
+    }
+
+    &__percentage {
+      display: flex;
+      position: relative;
+      margin-bottom: 2rem;
+      color: var(--black-5);
+
+      span {
+        color: var(--tertiary);
+      }
+
+
+      &::after, &-bar {
+        transition: width 0.3s ease-in-out;
+        position: absolute;
+        bottom: -1rem;
+
+        height: 5px;
+        border-radius: 0.4rem;
+        content: '';
+      }
+
+      &-bar {
+        z-index: 1;
+        background: var(--tertiary);
+      }
+
+      &::after {
+        background: #F5F5F5;
+        width: 100%;
+        z-index: -1;
+
+      }
+    }
+
+  }
+}

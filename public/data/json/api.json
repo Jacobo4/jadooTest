@@ -1,0 +1,74 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "thumbnail": "./data/images/services/service-1.svg",
+      "title": "Calculated Weather ",
+      "description": "Built Wicket longer admire do barton vanity itself do in it."
+    },
+    {
+      "id": "2",
+      "thumbnail": "./data/images/services/service-2.svg",
+      "title": "Best Flights",
+      "description": "Engrossed listening. Park gate sell they west hard for the."
+    },
+    {
+      "id": "3",
+      "thumbnail": "./data/images/services/service-3.png",
+      "title": "Local Events",
+      "description": "Barton vanity itself do in it. Preferd to men it engrossed listening. "
+    },
+    {
+      "id": "4",
+      "thumbnail": "./data/images/services/service-4.svg",
+      "title": "Customization",
+      "description": "We deliver outsourced aviation services for military customers"
+    }
+  ],
+  "destinations": [
+    {
+      "id": "1",
+      "thumbnail": "./data/images/destinations/destination-1.png",
+      "location": "Rome, Italty",
+      "price": "$5,42k",
+      "duration": "10 Days Trip"
+    },
+    {
+      "id": "2",
+      "thumbnail": "./data/images/destinations/destination-2.png",
+      "location": "London, UK",
+      "price": "$4.2k",
+      "duration": "12 Days Trip"
+    },
+    {
+      "id": "3",
+      "thumbnail": "./data/images/destinations/destination-3.png",
+      "location": "Full Europe",
+      "price": "$15k",
+      "duration": "28 Days Trip"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "thumbnail": "./data/images/testimonials/client-1.png",
+      "message": "On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.",
+      "name": "Mike Taylor",
+      "position": "Lahore, Pakistan"
+    },
+    {
+      "id": "2",
+      "thumbnail": "./data/images/testimonials/client-2.png",
+      "message": "To live life you need problems. If you get everything you want the minute you want it then what's the point of living?",
+      "name": "Chris Thomas",
+      "position": "CEO of Red Button"
+    },
+    {
+      "id": "3",
+      "thumbnail": "./data/images/testimonials/client-3.png",
+      "message": "Some people just make the world a worse place to be in just by being around, Jake. That's right, bad apples. ‘Lock 'em all up,’ I say. At the bottom of the ocean, where it's too dark to see.",
+      "name": "Finn the human",
+      "position": "Hero"
+    }
+  ]
+}

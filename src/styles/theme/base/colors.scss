@@ -1,0 +1,99 @@
+
+:root {
+  /*=====================
+  Colors
+  =======================*/
+  --primary: #DF6951;
+  --secondary: #F1A501;
+  --tertiary: #8A79DF;
+
+  --black-1: #212832;
+  --black-2: #181E4B;
+  --black-3: #14183E;
+  --black-4: #1E1D4C;
+  --black-5: #080809;
+
+  --white: white;
+  --gray-1: #5E6282;
+  --gray-2: #F5F5F5;
+  --gray-3: #84829A;
+  --purple: #DFD7F9;
+  --blue1:#006380;
+  --blue2:#4152CA;
+  //--gray: #8d8d8d;
+  //--red: #ff4d4d;
+  //--green: #08fd20;
+  //--yellow: #fdf108;
+  //--orange: #fdab08;
+  //--pink: #ff71e8;
+  //--celeste: #63e8ff;
+  //--blue: #305dff;
+
+}
+
+.theme {
+  &--light {
+    /*=====================
+    Backgrounds
+     =======================*/
+    --bg-body: var(--white);
+    //--bg-card: var(--black);
+    //--bg-loader: var(--primary);
+    //--bg-tooltip: var(--black);
+    //--bg-alert: var(--black);
+    //--bg-wrapper: var(--primary);
+    //--bg-project: var(--black);
+    //--bg-project-nav: var(--secondary);
+    //--bg-project-preview-title: var(--black-light);
+    //--bg-collage-logo: var(--black-light);
+
+    /*=====================
+      Fonts
+      =======================*/
+    --font-color-h1: var(--black-2);
+    --font-color-h2: var(--black-2);
+    --font-color-h3: var(--primary);
+    --font-color-h4: var(--gray-1);
+    --font-color-h5: var(--black-4);
+    --font-color-h6: var(--gray-1);
+    --font-color-p: var(--gray-1);
+    --font-color-a: var(--black-1);
+
+    --font-color-navOption: var(--black-2);
+    --font-color-navOption--hover: var(--primary);
+    --font-color-navOption--active: var(--primary);
+
+    /*=====================
+      Buttons
+      =======================*/
+    --bg-button-primary: var(--primary);
+    --font-color-button-primary: var(--white);
+    --box-shadow-button-primary: 0px 20px 35px rgba(var(--primary), 0.3);
+
+    --bg-button-secondary: var(--secondary);
+    --font-color-button-secondary: var(--white);
+    --box-shadow-button-secondary: 0px 20px 35px rgba(var(--secondary), 0.15);
+
+    /*=====================
+      Shadows
+      =======================*/
+    //--box-shadow-card: var(--green-dark);
+
+    /*=====================
+      Borders
+      =======================*/
+    //--border-color-collage-logo: var(--secondary);
+    //--border-color-nav: var(transparent);
+    //--border-color-project: var(transparent);
+
+    /*=====================
+      Images
+      =======================*/
+
+    //--fill-color-negative: var(--secondary);
+  }
+
+  //
+}
+
+

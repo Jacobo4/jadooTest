@@ -1,0 +1,49 @@
+button {
+  text-decoration: none;
+  background: transparent;
+  border-color: transparent;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn {
+  font-family: "Product Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: max-content;
+  height: max-content;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: filter 0.3s ease-in-out;
+
+
+  @include md() {
+    padding: 1.8rem 2.8rem;
+  }
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &--primary {
+    background: var(--bg-button-primary);
+    color: var(--font-color-button-primary);
+    box-shadow: var(--box-shadow-button-primary);
+  }
+
+  &--secondary {
+    background: var(--bg-button-secondary);
+    color: var(--font-color-button-secondary);
+    box-shadow: var(--box-shadow-button-secondary);
+  }
+
+}
+
